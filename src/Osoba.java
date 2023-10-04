@@ -1,6 +1,6 @@
 import java.util.Date;
 
-abstract public class Osoba {
+ public class Osoba {
     private String imie;
     private String nazwisko;
 
@@ -12,7 +12,13 @@ abstract public class Osoba {
         dataUrodzenia = new Date(rok,m,d);
     }
 
-    public String getImie() {
+     public Osoba(String imie, String nazwisko, Date dataUrodzenia) {
+         this.imie = imie;
+         this.nazwisko = nazwisko;
+         this.dataUrodzenia = dataUrodzenia;
+     }
+
+     public String getImie() {
         return imie;
     }
 
